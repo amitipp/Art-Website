@@ -1,3 +1,14 @@
+const images = document.querySelectorAll(".img-card img, img-card-abstract img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("close");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
 
 closeBtn.addEventListener("click", () => {
     lightbox.style.display = "none";
@@ -8,3 +19,4 @@ lightbox.addEventListener("click", (e) => {
         lightbox.style.display = "none";
     }
 });
+/*End of gallery pictures full screen view*/
