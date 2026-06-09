@@ -1,0 +1,237 @@
+/*--------------------------*/
+/*) Begining NAVIGATION MENU (*/
+/*--------------------------*/
+/*) Beginning sidenav*/
+/*--------------------------*/
+
+/* The sidebar menu */
+.sidenav {
+  height: 100vh; /* Full-height: remove this if you want "auto" height */
+  width: 0px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  /*Maybe i would like to add here in the future (border-top).*/
+  border-top: 0px solid rgb(137, 24, 203); /* Add a white top border */
+  /*Maybe i would like to add here in the future (border-buttom).*/
+  border-bottom: 0px solid rgb(4, 166, 253); /* Add a white bottom border */
+  background-color: #46006c; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: auto; /* Enable scrolling if the sidenav has too much content */
+  margin: 0;
+  padding: 0px; /* Place content 60px from the top */
+  display: flex; /* Enables flexbox for easy alignment */
+  flex-direction: column; /* Stacks items vertically */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #164e0a;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav ul {
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*--------------------------*/
+/*) End sidenav*/
+/*--------------------------*/
+
+/*------------------------*/
+
+/* The navigation menu links */
+.navli a {
+  padding: 8px 16px;
+  font-size: 25px;
+  color: #0eb42f;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.navli a:hover {
+  color: #f1f1f1;
+}
+
+/*--------------------------*/
+/*) End navli*/
+/*--------------------------*/
+
+/*--------------------------*/
+/*) Begining of button section*/
+/*--------------------------*/
+
+/* The button used to open the sidebar */
+.openbtn {
+  /*Makes the button to stick when scrolling*/
+  position: sticky;
+  top: 20px;
+  z-index: 1000;
+  /*-----*/
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #de0808cf;
+  color: rgba(246, 246, 246, 0.981);
+  border-radius: 4px; /* Add a border radius */
+  border: none;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transitions for hover effects */
+  outline: none; /* Remove default outline */
+}
+
+/* Hover effect on the button */
+.openbtn:hover {
+  background-color: #1a036b;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow for emphasis */
+  animation: pulse 1s infinite alternate; /* Pulsating effect */
+}
+
+
+/*@keyframes defines simple pulsing animation over a hover*/
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/*For openbtn better visibility on mobile.*/
+@media (max-width: 600px) {
+  .openbtn {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: relative;
+  font-size: 28px;
+  margin-left: -40px;
+  padding: 0 16px !important;
+  color: white !important;
+  background-color: #e74c3c; /* Change background color to red */
+  border-radius: 0%; /* Make circular shape (From square to a round)*/
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sidenav .closebtn::before {
+  content: 'Close'; /* Use the chosen word as the symbol */
+  margin-right: 4px; /* Adjust the margin to position the word */
+}
+
+.sidenav .closebtn:hover {
+  background-color: #0d5d0d; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarged for emphasis */
+}
+
+/* Style for close button list item " !important; " = run over any applied existing css code.  */
+.navlibutton {
+  text-align: right !important;
+}
+
+/*--------------------------*/
+/*) End of button section*/
+/*--------------------------*/
+
+/*------------------------*/
+
+/*--------------------------*/
+/*) Beginning ul*/
+/*--------------------------*/
+
+/*Remove dots (ul) - Begining of sentence*/
+ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+/*--------------------------*/
+/*) End ul*/
+/*--------------------------*/
+
+/*------------------------*/
+
+/*--------------------------*/
+/*) Beginning li*/
+/*--------------------------*/
+
+li {
+  text-align: left;
+}
+
+/*Takes the last list item (li) withing an unorder list (ul),
+select the last item among it's sibilings
+and remove it's buttom border.*/
+li:last-child {
+  border-bottom: none;
+}
+
+/*--------------------------*/
+/*) End li*/
+/*--------------------------*/
+
+/*------------------------*/
+
+/*--------------------------*/
+/*) Beginning main*/
+/*--------------------------*/
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  margin-left: 0px; /* Will be set by JavaScript */
+  padding: 20px;
+  transition: margin-left .5s; /* If you want a transition effect */
+}
+
+/*--------------------------*/
+/*) End main*/
+/*--------------------------*/
+
+/*) END NAVIGATION MENU (*/
+/*--------------------------*/
+
+/*------------------------*/
+
+/*--------------------------*/
+/*) Beginning body of the page (*/
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    background: radial-gradient(
+        circle at top,
+        #143a87 0%,
+        #11791c 50%,
+        #dc1881 100%
+    );
+}  
+/*) End body of the page (*/
+
+/*------------------------*/
