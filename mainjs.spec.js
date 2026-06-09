@@ -15,17 +15,3 @@ function closeNav() {
 
 /*End of navigation menu*/
 /*------------------------*/
-
-/*Begining of gallery pictures full screen view*/
-const images = document.querySelectorAll(".img-card img, img-card-abstract img");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const closeBtn = document.getElementById("close");
-
-images.forEach(img => {
-    img.addEventListener("click", () => {
-        lightbox.style.display = "flex";
-        lightboxImg.src = img.src;
-    });
-});
-/*End of gallery pictures full screen view*/
