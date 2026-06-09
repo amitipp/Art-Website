@@ -1,0 +1,281 @@
+/*Set all the galleries in this class to have 3 pictures in each row*/
+/* 🖼️ Gallery layout: 3 per row */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+/*End of 3 pictures in a row maker*/
+
+/*------------------------*/
+
+/*Beginning h2gallery on top of the page main class*/
+
+.h2gallery {
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: 200;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+
+    color: #e2e8f0;
+
+    text-shadow:
+        0 0 8px rgba(24, 180, 197, 0.515);
+
+    margin: 60px 0 40px;
+    position: relative;
+}
+
+.h2gallery::after {
+
+    content: "";
+    display: block;
+    width: 300px;
+    height: 2px;
+    margin: 18px auto 0;
+    background: rgba(125, 211, 252, 0.6);
+}
+
+.p-h2gallery {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #e2e8f0;
+
+    text-shadow:
+        0 0 8px rgba(24, 180, 197, 0.515);
+
+    margin: 60px 0 40px;
+    position: relative;
+}
+
+/*End of first gallery main class*/
+
+/*------------------------*/
+
+/*Beginning of galleryabstract.*/
+
+.galleryabstract {
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: 200;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+
+    color: #e2e8f0;
+
+    text-shadow:
+        0 0 8px rgba(24, 180, 197, 0.515);
+
+    margin: 60px 0 40px;
+    position: relative;
+}
+
+.galleryabstract::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 2px;
+    margin: 18px auto 0;
+    background: rgba(125, 211, 252, 0.6);
+}
+
+.galleryabstract-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/*End of galleryabstract.*/
+
+/*------------------------*/
+
+/*Beginning of galleryrealistic.*/
+
+.galleryrealistic {
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: 200;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+
+    color: #e2e8f0;
+
+    text-shadow:
+        0 0 8px rgba(24, 180, 197, 0.515);
+
+    margin: 60px 0 40px;
+    position: relative;
+}
+
+.galleryrealistic::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 2px;
+    margin: 18px auto 0;
+    background: rgba(125, 211, 252, 0.6);
+}
+
+.galleryrealistic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/*End of galleryrealistic.*/
+
+/*------------------------*/
+
+/*Beginning For all the pictures in all the galleries.*/
+/* Card */
+.img-card {
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+
+    border: 1px solid rgba(125, 211, 252, 0.35);
+
+    background: linear-gradient(
+        145deg,
+        rgba(56, 189, 248, 0.08),
+        rgba(168, 85, 247, 0.08)
+    );
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.4),
+        0 0 10px rgba(125, 211, 252, 0.15);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+/* Image */
+.img-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+    
+}
+
+.img-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(168, 85, 247, 0.6);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.6),
+        0 0 20px rgba(7, 172, 223, 0.749),
+        0 0 25px rgba(18, 240, 33, 0.819);
+}
+
+/* Hover effect */
+.img-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Caption */
+.single-img-caption {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+
+    padding: 5px 0px;
+    text-align: center;
+
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+
+    background: rgba(124, 4, 96, 0.25);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+    pointer-events: none; /* IMPORTANT: does not break clicking image */
+    transition: all 0.3s ease;
+}
+
+/* Caption for abstract gallery */
+.single-img-caption-abstract {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+
+    padding: 5px 0px;
+    text-align: center;
+
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+
+    background: rgba(124, 4, 96, 0.25);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+    pointer-events: none; /* IMPORTANT: does not break clicking image */
+    transition: all 0.3s ease;
+}
+
+/*End of class of all the pictures in all the galleries*/
+
+/*------------------------*/
+
+/*Beginning create buttons for the pictures to become in full screen when clicking.*/
+/*full screen images*/
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/*End create button for all the pictures to become in full screen when clicking.*/
+
+/*) End gallery menu*/
+/*--------------------------*/
+
+/*------------------------*/

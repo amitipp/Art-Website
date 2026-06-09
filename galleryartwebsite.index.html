@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.style.css">
+    <link rel="stylesheet" href="galleryartwebsite.style.css">
+    
+    <title>Gallery Page</title>
+</head>
+<body>
+    
+    <!--Navigation menu-->
+    <div id="sidenav" class="sidenav">
+        <ul class="active">
+            <li class="navlibutton"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+            <li class="navli"><a href="#aboutme">About Me</a></li>
+            <li class="navli"><a href="#h2gallery">Gallery</a></li>
+            <li class="navli"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <!--End Navigation menu.-->
+
+    <!--Beginning of 'main' = controls the page moving to the side when opening navigation.-->
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+        
+
+    
+        <!--Beginning of first gallery.-->
+        <h2 id="h2gallery" class="h2gallery">Gallery</h2>
+        <p class="p-h2gallery">Click on the picture if you'd like to see it in full screen.</p>
+        
+        <!--Gallery figures.-->
+        <div id="gallery" class="gallery">
+
+            <div class="img-card">
+                <img src="images/3smallsketches.jpg" alt="3 Small drawings.">
+                <div class="single-img-caption">Colored 3 tiny drawings</div>
+            </div>
+
+             <div class="img-card">
+                <img src="images/abstractbird.jpg" alt="Abstract bird.">
+                <div class="single-img-caption-abstract">Abstractic colorful bird</div>
+            </div>
+
+            <div class="img-card">
+                <img src="images/alienspirit1.jpg" alt="Colored alien.">
+                <div class="single-img-caption">Colored alien figure</div>
+            </div>
+
+            <div class="img-card">
+                <img src="images/colorfulfigures.jpg" alt="Colorful figures.">
+                <div class="single-img-caption">Colorful figures</div>
+            </div>
+
+            
+            <div class="img-card">
+            <img src="images/longeyes.jpg" alt="Figure with two heads and long snail eyes going out of a cell.">
+                <div class="single-img-caption">Long eyes alien</div>
+            </div> 
+        
+            <div class="img-card">
+                <img src="images/camping.jpg" alt="sketch of a camping.">
+                <div class="single-img-caption">Sketch of a camping</div>
+            </div>
+        </div>
+        <!--End of first gallery.-->
+
+
+        <!--Beginning of second gallery.-->
+        <h2 id="abstractmenu" class="galleryabstract">Abstract</h2>
+
+        <!--Gallery Abstract. -->
+        <div id="galleryabstract" class="galleryabstract-grid">
+
+
+            <div class="img-card">
+                <img src="images/colorfulabstractlast.jpg" alt="My last abstract drawing.">
+                <div class="single-img-caption-abstract">Abstract from travelling</div>
+            </div>
+
+
+            <div class="img-card">
+                <img src="images/largeabstract.jpg" alt="My Biggest abstract drawing.">
+                <div class="single-img-caption-abstract">One of my largest and longest abstracts</div>
+            </div>
+
+            <div class="img-card">
+                <img src="images/abstractmm.jpg" alt="Abstract mm.">
+                <div class="single-img-caption-abstract">Colored abstract</div>
+            </div>
+
+             <div class="img-card">
+                <img src="images/abstractmixcolor.jpg" alt="Abstract mix colors grey and colorful.">
+                <div class="single-img-caption-abstract">Dark abstract mixed with colors</div>
+            </div>
+            
+            <div class="img-card">
+            <img src="images/abstractnormalpencil.jpg" alt="Normal 1 color abstract.">
+                <div class="single-img-caption-abstract">Single colored abstract</div>
+            </div> 
+        
+            <div class="img-card">
+                <img src="images/keyabstract.jpg" alt="Abstart with realism of key and lock.">
+                <div class="single-img-caption-abstract">Key to the heart</div>
+            </div>
+        </div>
+
+        <!--End of second gallery.-->
+
+        <!-- Beginning of third gallery realistic.-->
+
+        <h2 id="abstractmenu" class="galleryabstract">Realistic</h2>
+
+        <div id="galleryrealistic" class="galleryrealistic-grid">
+
+
+            <div class="img-card">
+                <img src="images/indianwoman.jpg" alt="drawing of an Indian woman.">
+                <div class="single-img-caption-abstract">Indian woman</div>
+            </div>
+
+
+            <div class="img-card">
+                <img src="images/kissing.jpg" alt="Drawing of people kissing.">
+                <div class="single-img-caption-abstract">Kiss</div>
+            </div>
+
+            <div class="img-card">
+                <img src="images/guyworkingout.jpg" alt="Drawing of a guy working out.">
+                <div class="single-img-caption-abstract">Guy working out</div>
+            </div>
+
+             <div class="img-card">
+                <img src="images/dragonsketch.jpg" alt="Sketch of a dragon.">
+                <div class="single-img-caption-abstract">Dragon</div>
+            </div>
+            
+            <div class="img-card">
+            <img src="images/airforce.jpg" alt="Drawing of airforce jet.">
+                <div class="single-img-caption-abstract">Jet plane</div>
+            </div> 
+        
+            <div class="img-card">
+                <img src="images/sailingboat.jpg" alt="Drawing of sailing ship.">
+                <div class="single-img-caption-abstract">Ship</div>
+            </div>
+        </div>
+        <!--End of third gallery.-->
+
+
+        <!-- Begining fullscreen photos Viewer.-->
+        <div id="lightbox">
+            <span id="close">&times;</span>
+            <img id="lightbox-img">
+        </div>
+        <!--End of fullscreen photo viewer.-->
+
+    </div>
+    <!--End of main.-->
+
+
+<script src="mainjs.spec.js"></script>  
+</body>
+</html>
